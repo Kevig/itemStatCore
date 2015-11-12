@@ -3,7 +3,12 @@ using System.Collections;
 
 public class Health : Stat
 {
-    public float max { get; set; }
+    public float max
+    {
+        get;
+        set;
+    }
+
     public float regenValue;
 
     public Health(float n)

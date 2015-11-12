@@ -63,10 +63,6 @@ public class Character : MonoBehaviour
         this.haste = new Haste(0f);
         this.movementSpeed = new MovementSpeed(0f);
 
-        // Equip start items
-        this.equipItem(1);
-        this.equipItem(5);
-
         // Calculate character stats from base values + item values
         this.updateStats();
 
@@ -88,6 +84,11 @@ public class Character : MonoBehaviour
         this.reduction.value = this.getReductionValue();
         this.haste.value = this.getHasteValue();
         this.movementSpeed.value = this.getMovementSpeedValue();
+
+        if(this.health.value > this.health.max)
+        {
+            this.health.value = this.health.max;
+        }
 
         this.updateValuesText();
     }
@@ -189,7 +190,7 @@ public class Character : MonoBehaviour
         this.offhandSlot = this.offHand.item.name;
     }
 
-    private void equipItem(int anId)
+    public void equipItem(int anId)
     {
         if(ItemList.itemExists(anId))
         {
@@ -239,7 +240,7 @@ public class Character : MonoBehaviour
     }
 
     // Clears the given slot
-    private void unequipItem(EquipSlot aSlot)
+    public void unequipItem(EquipSlot aSlot)
     {
         switch(aSlot)
         {
