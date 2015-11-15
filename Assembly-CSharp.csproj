@@ -69,8 +69,8 @@
      <Compile Include="Assets\Stats\Power.cs" />
      <Compile Include="Assets\Stats\Reduction.cs" />
      <Compile Include="Assets\Stats\Stat.cs" />
-     <Compile Include="Assets\UICSheetItemText.cs" />
-     <Compile Include="Assets\UIStatText.cs" />
+     <Compile Include="Assets\UIScripts\UICSheetItemText.cs" />
+     <Compile Include="Assets\UIScripts\UIStatText.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

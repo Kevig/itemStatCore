@@ -11,8 +11,8 @@ public static class ItemList
 
         itemList = new Dictionary<int, ItemData>();
 
-        itemList.Add(-1, new ItemData("empty",           ItemType.Equipment, 0f, 0f, 0f, 0f, 0f));
-        itemList.Add(0,  new ItemData("baseStats",       ItemType.Equipment, 100f, 50f, 20f, 1f, 1f,     EquipSlot.Base));
+        itemList.Add(-1, new ItemData("empty",            ItemType.Equipment, 0f, 0f, 0f, 0f, 0f));
+        itemList.Add(0,  new ItemData("baseStats",        ItemType.Equipment, 100f, 50f, 20f, 1f, 1f,     EquipSlot.Base));
         itemList.Add(1,  new ItemData("Test Helm",        ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Head));
         itemList.Add(2,  new ItemData("Test Shoulders",   ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Shoulders));
         itemList.Add(3,  new ItemData("Test Chest",       ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Chest));
