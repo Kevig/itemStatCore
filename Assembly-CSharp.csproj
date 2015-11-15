@@ -71,6 +71,7 @@
      <Compile Include="Assets\Stats\Stat.cs" />
      <Compile Include="Assets\UIScripts\UICSheetItemText.cs" />
      <Compile Include="Assets\UIScripts\UIStatText.cs" />
+     <Compile Include="Assets\UIScripts\UIUtility.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
