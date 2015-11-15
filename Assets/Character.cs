@@ -20,6 +20,14 @@ public class Character : MonoBehaviour
     public Slot mainHand;
     public Slot offHand;
 
+    // Event for stats change
+    public delegate void statsUpdate(Character aCharacter);
+    public static event statsUpdate OnStatsUpdate;
+
+    // Events for item change
+    public delegate void itemUpdate(Character aCharacter);
+    public static event itemUpdate OnChangeItem;
+
     // Test variables
     public float maxHealth;
     public float currentHealth;
@@ -90,6 +98,7 @@ public class Character : MonoBehaviour
             this.health.value = this.health.max;
         }
 
+        OnStatsUpdate(this);
         this.updateValuesText();
     }
 
@@ -188,6 +197,8 @@ public class Character : MonoBehaviour
         this.handsSlot = this.hands.item.name;
         this.mainHandSlot = this.mainHand.item.name;
         this.offhandSlot = this.offHand.item.name;
+
+        OnChangeItem(this);
     }
 
     public void equipItem(int anId)

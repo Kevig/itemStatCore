@@ -13,12 +13,12 @@ public static class ItemList
 
         itemList.Add(-1, new ItemData("empty",           ItemType.Equipment, 0f, 0f, 0f, 0f, 0f));
         itemList.Add(0,  new ItemData("baseStats",       ItemType.Equipment, 100f, 50f, 20f, 1f, 1f,     EquipSlot.Base));
-        itemList.Add(1,  new ItemData("testHelm",        ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Head));
-        itemList.Add(2,  new ItemData("testShoulders",   ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Shoulders));
-        itemList.Add(3,  new ItemData("testChest",       ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Chest));
-        itemList.Add(4,  new ItemData("testLegs",        ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Legs));
-        itemList.Add(5,  new ItemData("testGloves",      ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Hands));
-        itemList.Add(6,  new ItemData("testBoots",       ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Boots));
+        itemList.Add(1,  new ItemData("Test Helm",        ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Head));
+        itemList.Add(2,  new ItemData("Test Shoulders",   ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Shoulders));
+        itemList.Add(3,  new ItemData("Test Chest",       ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Chest));
+        itemList.Add(4,  new ItemData("Test Legs",        ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Legs));
+        itemList.Add(5,  new ItemData("Test Gloves",      ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Hands));
+        itemList.Add(6,  new ItemData("Test Boots",       ItemType.Equipment, 10f, 5f, 2f, 0.1f, 0.1f,    EquipSlot.Boots));
 
     }
 
